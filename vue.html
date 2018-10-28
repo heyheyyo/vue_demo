@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html, charset=utf-11">
+        <title>Vue Demo</title>
+        <link rel="icon" type="image/png" sizes="16x16" href="./img/logo.png">
+        <link rel="stylesheet" href="./css/demo/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    </head>
+    <body>
+        <div class="container" id="app">
+            <div class="row">
+                <div class="outer">
+                    <img class="logo" :src='logo'>
+                    <img class="red-fork" :src='red'>
+                    <img class="yellow-fork" :src='yellow'>
+                </div>
+                <div class="title">{{ sub_title }}</div>
+                <div class="input">
+                    <select v-model="input.type">
+                        <option v-for="item in select">{{ item.type }}</option>
+                    </select>
+                    <input type="text" name="sub_input" v-model="input.sub_title" @keyup.enter="inputHandler">
+                </div>
+                <div class="detail">
+                    <span class="glyphicon glyphicon-triangle-left" @click="change_index(-1)" v-if="index != 0"></span>
+                    <span>{{ today.type }}</span>
+                    <span>{{ today.sub_title }}</span>
+                    <span class="glyphicon glyphicon-triangle-right" @click="change_index(1)" v-if="index != menu_total - 1"></span>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+        <script src="./js/vue.js"></script>
+    </body>
+</html>

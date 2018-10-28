@@ -1,0 +1,80 @@
+body {
+	font-family: 微軟正黑體, Microsoft JhengHei, Glyphicons Halflings, sans-serif;
+	background-color: rgba(66, 184, 131, 0.5) !important;
+	height: 500px;
+}
+
+.logo {
+	display: block;
+	margin: 5% auto;
+	margin-bottom: 1%;
+	position: relative;
+	z-index: 2;
+}
+
+.outer {
+	width: 100%;
+	position: relative;
+}
+
+.yellow-fork {
+	position: absolute;
+	z-index: 0;
+	transform: rotate(67deg);
+	top: 0px;
+	left: 38.5%;
+	/*right: -150px;*/
+}
+
+.red-fork {
+	position: absolute;
+	z-index: 1;
+	transform: rotate(191.5deg);
+	top: 0px;
+	left: 38.5%;
+	/*left: 100px;*/
+}
+.red-fork, .yellow-fork {
+	/*margin-top: -123px;*/
+}
+
+.title {
+	color: white;
+	text-align: center;
+	background-color: #35495e;
+	border-radius: 5px;
+	width: 50%;
+	margin: 0 auto;
+	padding: 8px;
+	font-size: 18px;
+	font-family: "微軟正黑體";
+	font-weight: 600;
+}
+
+.detail, .input {
+	background-color: white;
+	color: #35495e;
+	border-radius: 5px;
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 3%;
+	padding: 8px;
+	font-family: "微軟正黑體";
+}
+
+.detail {
+	-webkit-user-select: none;
+}
+
+.glyphicon {
+	cursor: pointer;
+}
+
+.glyphicon-triangle-left {
+	float: left;
+}
+
+.glyphicon-triangle-right {
+	float: right;
+}

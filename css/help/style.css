@@ -1,0 +1,202 @@
+.header-img{
+  width: calc( 100% + 30px );
+  padding-top: 25%;
+  background-color: #FCFCFC;
+  position: relative;
+  margin-left: -15px;
+}
+
+.header-img>div{
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.header-img h2{
+  margin-top: 7.5%;
+  color: #282A46;
+  font-weight: 800;
+}
+
+.header-link-menu{
+  display: inline-block;
+  line-height: 37px;
+  padding: 4px;
+  padding-top: 30px;
+  width: 600px;
+  margin: auto;
+}
+
+.about-slogan{
+  width: 100%;
+  max-width: 560px;
+  margin: auto;
+  font-size: 21px;
+  font-weight: 800;
+  padding: 15px 30px 15px 35px;
+  background-image: url(/img/about/prompt.svg), url(/img/about/prompt.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 20px, 20px;
+  background-position: left top, right bottom;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+table{
+  width: 100%;
+  table-layout: fixed;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+
+table img{
+  height: 80px;
+  margin-bottom: 15px;
+}
+
+table h5{
+  color: #EA7484;
+  font-size: 15px!important;
+}
+
+table td{
+  color: #EA7484;
+}
+
+.timeline-area{
+  text-align: center;
+}
+
+.timeline-area img{
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.header-top-area{
+  background-color: #BFBFBF;
+  width: calc( 100% + 30px );
+  margin-left: -15px;
+}
+
+.header-top-area button{
+  height: 37px;
+  border: none;
+  background-color: #FCFCFC;
+  text-align: center;
+  width: 150px;
+  line-height: 37px;
+  color: #282A46;
+  margin-left: 0px;
+  cursor: default;
+}
+
+.header-top-area button.go-to{
+  background-color: #D8D8D8;
+  cursor: pointer;
+  margin-left: -5px;
+}
+
+.polices-tab{
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  display: none;
+  text-align: left;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.polices-tab.active{
+  display: block;
+}
+
+.help-cat-title{
+  height: 37px;
+  line-height: 37px;
+  border-bottom: 1px solid gray;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.help-cat-title span{
+  float: right;
+  line-height: 33px;
+  font-size: 21px;
+  margin-right: 15px;
+}
+
+.help-cat-title h5{
+  line-height: 37px;
+  margin-left: 15px;
+}
+
+.help-cat-title.active{
+  border-bottom: 0px;
+}
+
+.help-cat-title.active h5{
+  font-weight: 800;
+}
+
+.help-cat-title.active span{
+  transform: rotate(45deg);
+}
+
+.help-cat{
+  padding: 30px;
+  display: none;
+}
+
+.help-cat a{
+  color: gray!important;
+  cursor: pointer;
+}
+
+.help-cat a p{
+  color: gray;
+}
+
+.help-cat.active{
+  display: block;
+  border-bottom: 1px solid gray;
+}
+
+.search-result{
+  padding: 15px;
+  display: none;
+}
+
+.search-result a{
+  color: gray!important;
+}
+
+.search-result a p{
+  color: gray;
+}
+
+.polices-tab.search .help-cat, .polices-tab.search .help-cat-title{
+  display: none!important;
+}
+
+.polices-tab.search .search-result{
+  display: block;
+}
+
+.modal-content {
+  text-align: left !important;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+@media (max-width: 991px){
+  .header-link-menu{
+    width: 100%;
+        padding: 0px 15px 0px 15px;
+  }
+  .header-img{
+    padding-top: 60%;
+  }
+}

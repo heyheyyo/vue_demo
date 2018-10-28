@@ -9,4 +9,7 @@
 5. method  
 6. computed
 7. v-text、v-html( {{ }} )  
-8. v-bind(:)  
+8. v-bind(:) 
+
+### Dat7
+array.filter() 運算過後產生新的陣列  

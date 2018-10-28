@@ -23,20 +23,20 @@
                     <select v-model="input.type">
                         <option v-for="item in select">{{ item.type }}</option>
                     </select>
-                    <input type="text" name="sub_input" v-model.trim="input.sub_title" @keyup.enter="inputHandler">
+                    <input type="text" name="sub_input" v-model="input.sub_title" @keyup.enter="inputHandler">
                 </div>
                 <div class="detail">
-                    <span class="glyphicon glyphicon-triangle-left" @click="change_index(-1)" v-if="index != 0"></span>
-                    <span>{{ index + 1 }}</span>
-                    <span>{{ today.type }}</span>
-                    <span>{{ today.sub_title }}</span>
-                    <span class="glyphicon glyphicon-triangle-right" @click="change_index(1)" v-if="index != menu_total - 1"></span>
+                    <div v-for="(item, index) in type_select">
+                        <span>{{ index + 1 }}</span>
+                        <span>{{ item.type }}</span>
+                        <span>{{ item.sub_title }}</span>
+                    </div>
                 </div>
             </div>
         </div>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
-        <script src="./js/vue.js"></script>
+        <script src="./js/day7.js"></script>
     </body>
 </html>

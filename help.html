@@ -10,8 +10,6 @@
         <link rel="stylesheet" href="./css/help/style_guide.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     <body>
         <div class="container st-body st-shadow" id="help_center" style="background-color: white;">
@@ -27,99 +25,62 @@
                     </div>
                 </div>
             </div>
-            <div class="polices-tab active">
+            <div class="polices-tab active" id="app" >
                 <div class="help-cat-title" data-target="help-cat-1">
                     <span>+</span>
                     <h5>會員相關問題</h5>
                 </div>
                 <div class="help-cat help-cat-1" id="help-cat-1">
-                    <a data-id="0"><p>如何成為會員？</p></a>
-                    <a data-id="1"><p>如何修改個人資料與密碼？</p></a>
-                    <a data-id="2"><p>忘記自己的帳號密碼怎麼辦？</p></a>
-                    <a data-id="3"><p>成為會員有什麼好處？</p></a>
-                    <a data-id="4"><p>我一定要成為會員，才能在StayTuned上購買商品嗎？</p></a>
-                    <a data-id="5"><p>加入會員需要費用嗎？</p></a>
+                    <a v-for="item in menu1"><p>{{ item.sub_title }}</p></a>
                 </div>
                 <div class="help-cat-title" data-target="help-cat-2">
                     <span>+</span>
                     <h5>設計師</h5>
                 </div>
                 <div class="help-cat help-cat-2">
-                    <a data-id="6"><p>如何成為設計師？</p></a>
-                    <a data-id="7"><p>如何查詢自己上架的商品？</p></a>
-                    <a data-id="8"><p>如何刊登我的商品？</p></a>
-                    <a data-id="9"><p>如何編輯商品資訊？</p></a>
-                    <a data-id="10"><p>我沒有足夠的成本怎麼辦？</p></a>
+                    <a v-for="item in menu2"><p>{{ item.sub_title }}</p></a>
                 </div>
                 <div class="help-cat-title" data-target="help-cat-3">
                     <span>+</span>
                     <h5>廠商</h5>
                 </div>
                 <div class="help-cat help-cat-3">
-                    <a data-id="11"><p>該怎麼使用媒合功能？</p></a>
-                    <a data-id="12"><p>成為廠商會收費嗎？</p></a>
-                    <a data-id="13"><p>交貨後多久會收到款項？</p></a>
-                    <a data-id="14"><p>能夠終止與設計師的合約嗎？</p></a>
-                    <a data-id="15"><p>接了預售案，有什麼可以保障？</p></a>
+                    <a v-for="item in menu3"><p>{{ item.sub_title }}</p></a>
                 </div>
                 <div class="help-cat-title" data-target="help-cat-4">
                     <span>+</span>
                     <h5>商品及品牌搜尋</h5>
                 </div>
                 <div class="help-cat help-cat-4">
-                    <a data-id="16"><p>如何找到我想要的商品？</p></a>
-                    <a data-id="17"><p>如何瀏覽最熱門的商品？</p></a>
-                    <a data-id="18"><p>如何瀏覽最新上架的商品？</p></a>
-                    <a data-id="19"><p>如何尋找我想要的品牌？</p></a>
+                    <a v-for="item in menu4"><p>{{ item.sub_title }}</p></a>
                 </div>
                 <div class="help-cat-title" data-target="help-cat-5">
                     <span>+</span>
                     <h5>購買與訂單</h5>
                 </div>
                 <div class="help-cat help-cat-5">
-                    <a data-id="20"><p>目前提供那些付款方式？</p></a>
-                    <a data-id="21"><p>國內、外的運費是如何計算？</p></a>
-                    <a data-id="22"><p>使用信卡付款是安全的嗎?</p></a>
-                    <a data-id="23"><p>跨國交易時，會產生匯差的問題嗎？</p></a>
-                    <a data-id="24"><p>如何查詢目前訂單的處理狀況？</p></a>
-                    <a data-id="25"><p>如何分辨購買的對象是個人賣家還是StayTuned Fulfillment?</p></a>
-                    <a data-id="26"><p>發現訂錯商品了，要如何取消訂單呢？</p></a>
+                    <a v-for="item in menu5"><p>{{ item.sub_title }}</p></a>
                 </div>
                 <div class="help-cat-title" data-target="help-cat-6">
                     <span>+</span>
                     <h5>配送取貨</h5>
                 </div>
                 <div class="help-cat help-cat-6">
-                    <a data-id="27"><p>國內、外配送的方式有哪些？</p></a>
-                    <a data-id="28"><p>運費如何計算？</p></a>
-                    <a data-id="29"><p>沒有在預計的期限內取貨怎麼辦？</p></a>
-                    <a data-id="30"><p>是否接受台灣、美國以外的國家購買呢？</p></a>
-                    <a data-id="31"><p>訂購商品後需要幾天才會收到商品呢？</p></a>
-                    <a data-id="32"><p>收到的商品沒有隨附統一發票呢？</p></a>
+                    <a v-for="item in menu6"><p>{{ item.sub_title }}</p></a>
                 </div>
                 <div class="help-cat-title" data-target="help-cat-7">
                     <span>+</span>
                     <h5>退貨退款</h5>
                 </div>
                 <div class="help-cat help-cat-7">
-                    <a data-id="33"><p>購買商品尺寸不合，能夠換貨嗎？</p></a>
-                    <a data-id="34"><p>購買國外商品能夠退貨嗎？</p></a>
-                    <a data-id="35"><p>退貨時應該注意些什麼？</p></a>
-                    <a data-id="36"><p>能夠申請部分退貨嗎？</p></a>
-                    <a data-id="37"><p>申請退款時會退手續費嘛？</p></a>
-                    <a data-id="38"><p>退貨款項會如何退還？</p></a>
-                    <a data-id="39"><p>申請退款後需要多久時間處理？</p></a>
-                    <a data-id="40"><p>辦理退貨時，發票找不到怎麼辦？</p></a>
+                    <a v-for="item in menu7"><p>{{ item.sub_title }}</p></a>
                 </div>
                 <div class="help-cat-title" data-target="help-cat-8">
                     <span>+</span>
                     <h5>E-WALLET</h5>
                 </div>
                 <div class="help-cat help-cat-8">
-                    <a data-id="41"><p>如何判別擁有多少線上現金？</p></a>
-                    <a data-id="42"><p>可以轉換成現金嗎？</p></a>
-                    <a data-id="43"><p>申請提領後，多久會收到款項？</p></a>
-                    <a data-id="44"><p>提領的時候會有手續費用嗎？</p></a>
+                    <a v-for="item in menu8"><p>{{ item.sub_title }}</p></a>
                 </div>
                 <div class="help-cat-title" data-target="help-cat-9">
                     <span>+</span>
@@ -151,6 +112,9 @@
                 </div>
             </div>
         </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
         <script src="./js/help.js"></script>
     </body>
 </html>

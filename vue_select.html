@@ -23,10 +23,10 @@
                     <select v-model="input.type">
                         <option v-for="item in select">{{ item.type }}</option>
                     </select>
-                    <input type="text" name="sub_input" v-model="input.sub_title" @keyup.enter="inputHandler">
+                    <input type="text" name="sub_input" v-model="input.sub_title">
                 </div>
                 <div class="detail">
-                    <div v-for="(item, index) in type_select">
+                    <div v-for="(item, index) in type_input">
                         <span>{{ index + 1 }}</span>
                         <span>{{ item.type }}</span>
                         <span>{{ item.sub_title }}</span>

@@ -39,6 +39,17 @@ let vm = new Vue({
 					return item.type === this.input.type
 				});
 			}
+		},
+		type_input() {
+			if (this.input.sub_title) {
+				return this.type_select.filter(item => {
+					let content = item.sub_title.toLowerCase();
+					let keyword = this.input.sub_title.toLowerCase();
+					return content.indexOf(keyword) !== -1
+				});
+			} else {
+				return this.type_select
+			}
 		}
 	},
 	methods: {

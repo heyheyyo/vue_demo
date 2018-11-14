@@ -1,0 +1,15 @@
+.container {
+	margin-top: 5%;
+}
+
+.add-input, .add-textarea, .add-btn {
+	margin-top: 2%;
+}
+
+.block {
+	box-shadow: 0px 0px 5px 1px #CCC;
+}
+
+.card {
+	margin: 1%;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html, charset=utf-11" />
+    <title>Vue Demo</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/logo.png" />
+    <link rel="stylesheet" href="./css/todo_list/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+    />
+  </head>
+  <body>
+    <div class="container" id="app">
+      <div class="row">
+        <strong><h3>Todo-list</h3></strong>
+        <button
+          class="btn btn-primary"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapseExample"
+          aria-expanded="false"
+          aria-controls="collapseExample"
+        >
+          add new todo
+        </button>
+        <div class="collapse" id="collapseExample">
+          <div class="well">
+            <strong><h4>內容：</h4></strong>
+            <textarea cols="100" rows="10"></textarea>
+            <button class="btn submit_btn">送出</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <script src="./js/todo_list.js"></script>
+  </body>
+</html>
